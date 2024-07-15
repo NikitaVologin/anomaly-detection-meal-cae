@@ -7,12 +7,14 @@ __pycache__/
 *.so
 
 # models
+src/trained-models
 *.keras
 *.h5
 *.weights.h5
 
 #images
 src/data/
+
 
 # Distribution / packaging
 .Python
