@@ -34,9 +34,10 @@ You can see others in `requirements.txt`
 * Update pip: `pip install -U pip`
 * And use: `pip install <library_name>`
 
-### Download the datasets
+### Download 
 
 Download datasets [here](https://disk.yandex.ru/d/5RngW1_VZEflnw) and then move extracted images files to data folder.
+Download model weights [here](https://disk.yandex.ru/client/disk/DSM-weights)
 
 ## Project Organization
 ```
