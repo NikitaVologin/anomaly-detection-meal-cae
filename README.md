@@ -36,12 +36,13 @@ You can see others in `requirements.txt`
 
 ### Download 
 
-Download datasets [here](https://disk.yandex.ru/d/5RngW1_VZEflnw) and then move extracted images files to data folder.
-Download model weights [here](https://disk.yandex.ru/client/disk/DSM-weights)
+Download datasets [here](https://disk.yandex.ru/d/5RngW1_VZEflnw) and then move extracted images files to src/data folder.
+
+Download model weights [here](https://disk.yandex.ru/client/disk/DSM-weights) and the move to src/trained-models/... dsm-50 and dsm-100 folders
 
 ## Project Organization
 ```
-├── src                       <- folder containing all mvtec classes.
+├── src                       <- folder containing all work stuff.
 │   ├── data                  <- folder containing the datasets
 |   ├── models                <- folder containing model classes
 |   ├── scripts               <- folder containing additional functions
