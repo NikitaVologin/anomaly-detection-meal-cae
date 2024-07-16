@@ -14,9 +14,10 @@ I have train two CNN autoencoder on DSM-50 and DSM-100. Model is compiled and tr
 The proposed models have been trained on two datasets: DSM-50 and DSM-100.
 
 ## Model
-There is a total of 1 models based on the Convolutional Auto-Encoder (CAE) architecture implemented in this project:
+There is a total of 2 models based on the Convolutional Auto-Encoder (CAE) architecture implemented in this project:
 
 * Inception CAE by  https://github.com/natasasdj/anomalyDetection 
+* Advancde CAE 
   
 An autoencoder is a special type of neural network that is trained to copy its input to its output. An autoencoder first encodes the image into a lower dimensional latent representation, then decodes the latent representation back to an image. An autoencoder learns to compress the data while minimizing the reconstruction error.
 
@@ -47,7 +48,8 @@ Download model weights [here](https://disk.yandex.ru/client/disk/DSM-weights) an
 |   ├── models                <- folder containing model classes
 |   ├── scripts               <- folder containing additional functions
 |   ├── trained-models        <- folder containing all trained models
-|   ├── example.ipynb         <- demonstrate models results file 
+|   ├── example-inc.ipynb     <- demonstrate inception model results file 
+|   ├── example-adv.ipynb     <- demonstrate advanced model results file 
 |   ├── train.ipynb           <- fit model file 
 ├── README.md                 <- readme file.
 └── requirements.txt          <- requirement text file containing used libraries.
