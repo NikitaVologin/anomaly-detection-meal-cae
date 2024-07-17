@@ -33,7 +33,7 @@ You can see others in `requirements.txt`
 ### Installation
 
 * Update pip: `pip install -U pip`
-* And use: `pip install <library_name>`
+* And use: `pip install -r requirements.txt`
 
 ### Download 
 
