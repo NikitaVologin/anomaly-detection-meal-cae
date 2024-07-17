@@ -7,11 +7,13 @@ def plot_imgs(generator):
     for i, img in zip(range(1, 6), batch):
         plt.subplot(1, 5, i)
         plt.imshow(img)
+        plt.xticks([])
+        plt.yticks([]) 
     plt.show()
 
 def plot_rec_imgs(generator, number_plots, autoencoder, verbose=0):
     images, _ = next(generator)
-    plt.figure(figsize=(8,8))
+    plt.figure(figsize=(10,6))
     for i in range(number_plots):    
         plt.title('train data')
         plt.subplot(1,3,1)
@@ -36,7 +38,7 @@ def plot_rec_imgs(generator, number_plots, autoencoder, verbose=0):
         plt.show()
             
 def plot_loss_history(history):
-    plt.rcParams["figure.figsize"] = (10,6)
+    plt.rcParams["figure.figsize"] = (8,8)
     loss = history.history['loss'] 
     val_loss = history.history['val_loss'] 
     epochs = range(1, len(loss) + 1)
@@ -71,7 +73,7 @@ def get_error(generator, autoencoder, batch_size, verbose=0):
     return recon_error_list
 
 def plot_rec_distribution(clean, fraud, threshold):
-    fig, ax = plt.subplots(figsize=(10,10))
+    fig, ax = plt.subplots(figsize=(8,8))
 
     ax.hist(clean, bins=50, density=True, label="clean", alpha=.3, color="green")
     ax.hist(fraud, bins=50, density=True, label="fraud", alpha=.6, color="red")
